@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>404 Not Found</title>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f2f2f2;
+        font-family: Arial, sans-serif;
+    }
+    .container {
+        text-align: center;
+    }
+    h1 {
+        font-size: 100px;
+        margin: 0;
+        color: #333;
+    }
+    p {
+        font-size: 20px;
+        margin: 10px 0;
+        color: #666;
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <h1>404</h1>
+    <p>Not Found</p>
+</div>
+<script>
+    const h1 = document.querySelector('h1');
+    const interval = setInterval(() => {
+        h1.style.fontSize = getComputedStyle(h1).fontSize === '100px' ? '120px' : '100px';
+    }, 500);
+</script>
+</body>
+</html>
